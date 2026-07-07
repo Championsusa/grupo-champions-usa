@@ -1,0 +1,21 @@
+:root{--red:#a80f12;--dark-red:#7d0709;--black:#151515;--cream:#fbf5ea}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,rgba(255,255,255,.95),rgba(251,245,234,.97));color:var(--black);display:flex;justify-content:center;padding:22px}
+.card{width:min(980px,100%);background:#fffdf8;border-radius:28px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,.18);border:1px solid rgba(168,15,18,.18)}
+.hero{display:flex;align-items:center;gap:26px;padding:30px 34px 20px;background:linear-gradient(90deg,#fffdf8,#fff4ee)}
+.logo{width:165px;max-width:34%;height:auto;object-fit:contain}
+.eyebrow{margin:0 0 5px;letter-spacing:4px;text-transform:uppercase;color:var(--dark-red);font-weight:800}
+h1{margin:0;font-size:clamp(44px,8vw,88px);line-height:.9;color:var(--red);font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700}
+.subtitle{margin:12px 0 0;font-size:clamp(22px,3vw,34px);font-weight:900;text-transform:uppercase}
+.photo-wrap{padding:0 34px 12px}
+.group-photo{width:100%;display:block;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.message{padding:20px 56px 10px;text-align:center;font-size:clamp(17px,2.1vw,22px);line-height:1.55}
+.message h2{color:var(--red);font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(28px,4vw,42px);margin:0 0 8px}
+.message strong{color:var(--red)}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:22px 34px 28px;text-align:center}
+.values div{border-top:2px solid rgba(168,15,18,.18);padding:18px 10px 0}
+.values span{font-size:42px}.values p{margin:8px 0 0;font-weight:700;text-transform:uppercase;font-size:14px;line-height:1.35}.values strong{color:var(--red)}
+footer{background:linear-gradient(90deg,var(--dark-red),var(--red),var(--dark-red));color:white;text-align:center;padding:20px 18px 24px}
+.blessing{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(28px,5vw,46px);margin:0 0 10px}
+.brand{margin:0;letter-spacing:8px;text-transform:uppercase;font-weight:800;font-size:14px}
+@media(max-width:720px){body{padding:10px}.hero{flex-direction:column;text-align:center;gap:14px;padding:24px 18px 16px}.logo{max-width:220px;width:58%}.photo-wrap{padding:0 14px 8px}.message{padding:18px 22px 8px}.values{grid-template-columns:1fr;padding:16px 24px 24px;gap:8px}.brand{letter-spacing:4px}}
